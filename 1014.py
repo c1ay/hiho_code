@@ -1,8 +1,30 @@
+"""
+Word tree:
+Input:
+    5
+    babaab
+    babbbaaaa
+    abba
+    aaaaabaa
+    babaababb
+    5
+    babb
+    baabaaa
+    bab
+    bb
+    bbabbaab
+Output:
+    1
+    0
+    3
+    0
+    0
+"""
+
 def add_cond(word, cond):
     if not word:
         return
     if word[0] in cond.children:
-        # if c.value == word[0]:
         c = cond.children[word[0]]
         c.count += 1
         return add_cond(word[1:], c)
@@ -15,7 +37,6 @@ def dfs(word, cond):
     if not word:
         return cond.count
     if word[0] in cond.children:
-        # if cond.value == word[0]:
         return dfs(word[1:], cond.children[word[0]])
     else:
         return 0
