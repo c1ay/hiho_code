@@ -46,7 +46,7 @@ void Insert(char word[])
      //字典
      scanf("%d",&n);
      gets(word);
-     while(n--){    //读取单词n次
+     while(n--){    //读取单词  n次
          gets(word);    
          Insert(word);    //将单词插入到字典树中
     }
