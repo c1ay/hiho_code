@@ -11,8 +11,8 @@ Output:9
 
 #include <iostream>  
 #include <string.h>  
-#define L 101  
-  
+#define L 101
+
 using namespace std;  
   
 int Deal(char word[]);  

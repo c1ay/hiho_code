@@ -1,7 +1,7 @@
 #include <iostream>
 #include <stdio.h>
 using namespace std;
- 
+
 struct Tire{
      int num;     Tire* next[26];
      Tire()
@@ -12,7 +12,7 @@ struct Tire{
              next[i] = NULL;
      }
 }tree;
- 
+
 void Insert(char word[])
 {
     Tire* p = &tree;
@@ -25,7 +25,7 @@ void Insert(char word[])
         p->num++;
      }
  }
- 
+
  int Find(char word[])
  {
     Tire* p = &tree;
@@ -38,7 +38,7 @@ void Insert(char word[])
      }
      return p->num;
  }
- 
+
  int main()
  {
      int n;
