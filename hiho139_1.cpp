@@ -5,8 +5,8 @@ using namespace std;
 
 int main()
 {
-  int T,n,m,i,j,k,b[55];
-  int vis[55];
+  int T,n,i,j,k,b[55];
+  // int vis[55];
   double a[55];
   scanf("%d",&T);
   while(T--)
